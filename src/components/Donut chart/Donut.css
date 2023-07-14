@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.donut-cont{
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid #000; */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(24,120,242,0.2);
+    display: flex;
+    flex-direction: column;
+    margin: 0  1rem;
+
+    @media (max-width: 425px){
+        width: 45%;
+        height: 100%;
+        margin: 0;
+    }
+}
+
+.quiz-heading{
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 0.3rem;
+    color: #333;
+    text-transform: capitalize;
+    margin-left: 1rem;
+
+    @media (max-width: 425px){
+        font-size: 0.8rem;   
+    }
+}
+
+.donut-box{
+    width: 90%;
+    height: 100%;
+    /* border: 1px solid #000; */
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 425px){
+        flex-direction: column;
+        margin: 0.5rem;
+    }
+
+}
+
+.progress-bar {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    background: 
+      radial-gradient(closest-side, white 59%, transparent 60% 100%),
+      conic-gradient(#ED1C24 45%, #018E42 0);    
+    transform: rotate(80deg);
+    animation: spin 1s ease-in-out;
+
+    @media (max-width: 425px){
+        width: 8rem;
+        height: 8rem;
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px){
+        width: 7rem;
+        height: 7rem;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);   
+    }
+    100% {
+        transform: rotate(80deg);
+    }
+}
+
+.donut-values-box{
+    width: 35%;
+    height: 35%;
+    /* border: 1px solid #000; */
+
+    @media (min-width: 769px) and (max-width: 1024px){
+        width: 40%;
+        height: 50%;
+    }
+
+    @media (max-width: 425px){
+        width: 60%;
+        height: 35%;
+    }
+}
+
+.values{
+    width: 100%;
+    height: 50%;
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+
+
+}
+
+.circle-clr{
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+
+    @media (min-width: 769px) and (max-width: 1024px){
+        width: 0.6rem;
+        height: 0.6rem;
+    }
+}
+
+#circle-clr-1{
+    background-color: #018E42;
+}
+
+#circle-clr-2{
+    background-color: #ED1C24;
+}
+
+.text{
+    width: 80%;
+    height: 80%;
+    /* border: 1px solid #000; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0.5rem;
+
+    @media (min-width: 769px) and (max-width: 1024px){
+        width: 90%;
+        height: 90%;
+    }
+}
+
+.text h3{
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.text p{
+    font-size: 0.6rem;
+    font-weight: 300;
+    color: #333;
+    text-transform: capitalize;
+}

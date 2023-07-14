@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cards-cont{
+    width: 98%;
+    height: 20vh;
+    /* border: 1px solid black; */
+    /* margin-top: 1.4rem; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 1rem; */
+
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+        width: 96%;
+        height: 100%;
+    }
+}
+
+.card-left{
+    width: 48.5%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: 768px){
+        width: 100%;
+        height: 45%;
+    }
+
+    @media (max-width: 425px){
+        width: 98%;
+    }
+}
+
+.card-right{
+    width: 48.5%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: 768px){
+        width: 100%;
+        height: 45%;
+    }
+
+    @media (max-width: 425px){
+        width: 98%;
+    }
+}
+
+.card{
+    background-color: #fff;
+    width: 47%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(24,120,242,0.2);
+    position: relative;
+    padding: 0.2rem 1rem;
+
+    @media (min-width: 769px) and (max-width: 1024px){
+        height: 90%;
+    }
+
+    @media (max-width: 425px){
+        padding: 0.2rem 0.5rem;   
+    }
+}
+
+.card-heading{
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 0.3rem;
+    color: #333;
+
+    @media (min-width: 769px) and (max-width: 1024px){
+        font-size: 0.9rem;
+    }
+
+    @media screen and (max-width: 768px){
+        font-size: 1.1rem;
+    }
+
+    @media (max-width: 425px){
+        font-size: 0.8rem;
+    }
+}
+
+.data{
+    position: absolute;
+    /* border: 1px solid black; */
+    width: 40%;
+    /* height: 50%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    bottom: 0.8rem;
+
+    @media (min-width: 769px) and (max-width: 1024px){
+        width: 45%;
+        height: 45%;
+        bottom: 0.8rem;
+    }
+
+    @media (max-width: 425px){
+        width: 50%;
+        height: 40%;
+        bottom: 1rem;
+    }
+}
+
+
+.sub-data{
+    /* border: 1px solid black; */
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 425px){
+        height: 40%;
+    }
+}
+
+#s-data{
+    width: 70%;
+}
+
+#s-pc{
+    width: 80%;
+}
+
+
+.neumeral{
+    font-size: 1.8vw;
+    color: #333;
+
+    @media screen and (max-width: 768px){
+        font-size: 3vw;
+    }
+
+    @media (max-width: 425px){
+        font-size: 4vw;
+    }
+}
+
+.perc-cont{
+    width: 65%;
+    height: 1.5rem;
+    background-color: rgba(1,142,66,0.3);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#red-one{
+    background-color: rgba(237,28,36,0.3);
+}
+
+.perc-cont img{
+    width: 1rem;
+    height: 1rem;
+}
+
+.perc-cont p{
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #018E42;
+}
+
+#red-text{
+    color: #ED1C24;
+}
+
+.sec-data{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.line-chart{
+    position: absolute;
+    width: 45%;
+    height: 60%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    right: 1rem;
+    bottom: 0.8rem;
+
+    @media (min-width: 769px) and (max-width: 1024px){
+        width: 40%;
+        height: 50%;
+        right: 0.8rem;
+    }
+
+    @media (max-width: 425px){
+        right: 0.5rem; 
+    }
+}
+
+.line-chart img{
+    width: 100%;
+    height: 100%;
+}
