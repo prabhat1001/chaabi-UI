@@ -1,7 +1,7 @@
 import React from "react";
 import "./PieFirst.css";
 
-import pieChart from "../../assets/pie.svg";
+import pieChart from "../../assets/Pie.svg";
 
 const PieFirst = () => {
   return (
